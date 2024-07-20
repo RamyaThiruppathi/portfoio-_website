@@ -1,0 +1,109 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 170px;
+}
+.potfolio-title{
+    position: relative;
+}
+.potfolio-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.potfolio-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.portfolio-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.portfolio-format h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.portfolio-format h2{
+    font-size: 38px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #DF8909 50%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolio-format p{
+    color: #d4d4d4;
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 350px;
+}
+.portfolio-readmore{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+.portfolio-readmore p{
+    font-size: 18px;
+}
+.portfolio-readmore img{
+    width: 20px;
+}
+.portfolio-format:hover{
+    border: 2px solid #790279;
+    background-image: linear-gradient(45deg, #3f1830,#250f01);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+@media(max-width:768px){
+    .portfolio{
+        align-items: start;
+        gap: 40px;
+        margin: 100px 70px;
+    }
+    .potfolio-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+    .potfolio-title img{
+        width: 130px;
+        margin-right: -20px;
+    }
+    .portfolio-format{
+        gap: 15px;
+        padding: 30px;
+    }
+    .portfolio-format h2{
+        font-size: 28px;
+    }
+    .portfolio-format p{
+        font-size: 18px;
+        line-height: 32px;
+        max-width: 300px;
+    }
+    .portfolio-readmore img{
+        width: 20px;
+    }
+    .portfolio-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
